@@ -11,7 +11,7 @@ public class OrderProvider : IOrderProvider
 
     public OrderProvider(CosmosClient cosmosClient)
     {
-        _container = cosmosClient.GetContainer("ffcg-eventful-pizza-place", "orders");
+        _container = cosmosClient.GetContainer("ffcg-eventful-pizza-place", "orders-mahmoud");
     }
 
     public async Task<Order> GetOrderById(Guid id)

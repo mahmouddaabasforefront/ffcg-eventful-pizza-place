@@ -11,7 +11,7 @@ public class CustomerProvider : ICustomerProvider
 
     public CustomerProvider(CosmosClient cosmosClient)
     {
-        _container = cosmosClient.GetContainer("ffcg-eventful-pizza-place", "customers");
+        _container = cosmosClient.GetContainer("ffcg-eventful-pizza-place", "customers-mahmoud");
     }
 
     public async Task<Customer> GetCustomerById(Guid id)

@@ -11,7 +11,7 @@ public class PizzaProvider : IPizzaProvider
 
     public PizzaProvider(CosmosClient cosmosClient)
     {
-        _container = cosmosClient.GetContainer("ffcg-eventful-pizza-place", "pizzas");
+        _container = cosmosClient.GetContainer("ffcg-eventful-pizza-place", "pizzas-mahmoud");
     }
 
     public async Task<Domain.Models.Pizza> GetPizzaById(Guid id)
