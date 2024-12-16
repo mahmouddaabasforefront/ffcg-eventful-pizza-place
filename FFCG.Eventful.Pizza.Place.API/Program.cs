@@ -22,6 +22,7 @@ builder.Services.AddScoped<IOrderProvider, OrderProvider>();
 builder.Services.AddScoped<IPizzaProvider, PizzaProvider>();
 builder.Services.AddScoped<ICustomerProvider, CustomerProvider>();
 builder.Services.AddScoped<IPizzaService, PizzaService>();
+builder.Services.AddScoped<IReceiptProvider, ReceiptProvider>();
 
 builder.Services.AddSingleton(s => new ServiceBusClient(builder.Configuration.GetValue<string>("ServiceBus:ConnectionString")));
 
